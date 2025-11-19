@@ -41,7 +41,7 @@ void decrypt(){
 
         sha256Bin(passkey, keyHash);
 
-        unsigned char* decrypted = decryptFileContent(extractedContent, contentSizeBit, keyHash);
+        unsigned char* decrypted = decryptFileContent(extractedContent, contentSizeByte, keyHash);
 
         if (!decrypted){
             printf("ERROR: Decryption failed! Wrong passkey or corrupted data.\n");
@@ -271,3 +271,4 @@ void encrypt(){
 
     printf("\n\n Images are prone to Corruption, best pratice to check them yourself first\nIf invalid, try again at a lower Bit per Channel\n\n");
 }
+
