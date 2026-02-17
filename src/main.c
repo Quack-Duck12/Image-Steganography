@@ -8,7 +8,7 @@
 #include "../include/cryptography.h"
 #include "../include/utils.h"
 
-#include "../include/Functions.h"
+#include "../include/functions.h"
 
 int main(int argc, char* argv[]){
 
@@ -31,4 +31,5 @@ int main(int argc, char* argv[]){
     printf("Press Enter to exit...");
     fflush(stdout);
     getchar();
+
 }
